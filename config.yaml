@@ -1,0 +1,28 @@
+# Fail Path AI 助手 配置文件
+
+# DeepSeek API 配置
+api:
+  base_url: "https://api.deepseek.com"
+  api_key: "YOUR API KEY"  # 请替换为你的 API Key
+  model: "glm-4-flash"
+
+# Fail Path 规则阈值
+rules:
+  # 规则1：报价无响应 — 报价后超过 N 天无回复
+  quotation_no_response_days: 7
+  # 规则2：长期未联系 — 超过 N 天未联系
+  no_contact_days: 14
+  # 规则3：跟进停滞 — 同一阶段停留超过 N 天
+  stage_stagnation_days: 21
+  # 规则4：高频低效跟进 — 最近 N 次跟进未推进阶段
+  ineffective_follow_up_count: 3
+  # 规则5：关键阶段失联 — 谈判中超 N 天无联系
+  key_stage_no_contact_days: 7
+
+# 数据库
+database:
+  path: "data/failpath.db"
+
+# 日报输出
+report:
+  output_dir: "output"
