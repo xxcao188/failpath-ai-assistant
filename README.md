@@ -1,17 +1,3 @@
-用户需要自己创建config.yaml内容模版如下：
-api:
-  base_url: "https://open.bigmodel.cn/api/paas/v4/"
-  api_key: "YOUR_ZHIPU_API_KEY"
-  model: "glm-4-flash"
-rules:
-  quotation_no_response_days: 7
-  no_contact_days: 14
-  stage_stagnation_days: 21
-  ineffective_follow_up_count: 3
-  key_stage_no_contact_days: 7
-
-  
-
 # 销售客户 Fail Path AI 助手
 
 ## 0. 结果定义
